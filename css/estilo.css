@@ -1,0 +1,90 @@
+html{
+    cursor: url(../img/mira2.png)30 30, auto;
+}
+
+body{
+    background-image: url('../img/iti.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.mosquito1{
+    width: 100px;
+    height: 100px;
+}
+.mosquito2{
+    width: 180x;
+    height: 180px;
+}
+.mosquito3{
+    width: 200px;
+    height: 200px;
+}
+
+.ladoA{
+    transform: scaleX(1);
+
+}
+
+.ladoB{ 
+    transform: scaleX(-1);
+
+}
+
+.Painel{
+    position: absolute;
+    width: 190px;
+    padding: 10px;
+    left: 0;
+    bottom: 0px;
+    border-top: solid #fff;
+    background-color: #cabdbda8;
+    opacity: 0.7;
+}
+
+.Vida{
+    float: left;
+}
+
+.Cronometro{
+    float: left;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#Escolha{
+    position: absolute;
+    top: 70% ;
+    left: 47%;
+}
+
+.botao{
+    position: absolute;
+    top: 62%;
+}
+
+.principal{
+    position: absolute;
+    top: 30%;
+    right: 30%;
+    left: 0.5%;
+}
+
+.Vencer{
+    position: absolute;
+    top: 55%;
+    left: 48%;
+}
+
+#vitorias{
+    position: absolute;
+    top: 12%;
+    left: 38%;
+}
+
+.Over{
+    position: absolute;
+    top: 15%;
+    left: 30%;
+    width: 800px;
+}
