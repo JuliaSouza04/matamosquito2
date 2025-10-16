@@ -23,13 +23,28 @@
 
     </div>
 
+    <div class="topo">
+      <div id="painel2">
+        <div class="cronometro">
+          Balões Estourados: <span id="pontos"></span>
+        </div>
+      </div>
+    </div>
+  
+
 
     <script>
          document.getElementById('Cronometro').innerHTML = tempo;
         setInterval(function(){
             posicaoRandomica();
-        },criaMosquitoTempo);
+        },criarMosquitoTempo);
+
+        document.getElementById('pontos').innerHTML = pontos;
     </script>
+
+    <audio prelod ="metadata" autoplay loop >
+     <source src="./img/musicafundo.mp3" type="audio/mp3">
+    </audio>
 
 </body>
 </html>

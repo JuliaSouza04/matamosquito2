@@ -4,17 +4,19 @@ var altura = 0;
 var largura = 0;
 var vidas = 1;
 var tempo = 15;
+var criarMosquitoTempo = 1500;
+var pontos = 0;
 
 
 // recupera o valor e salva em uma variavel
 var nivel = localStorage.getItem("nivelJogo");
 
 //tempo mosquito
-if(nivel == 'Fácil'){
+if(nivel == 'facil'){
     criaMosquitoTempo = 1500;
-}else if(nivel === 'Mádio'){
+}else if(nivel === 'medio'){
     criaMosquitoTempo = 1000;
-}else if (nivel === 'Difí cil'){
+}else if (nivel === 'dificl'){
     criaMosquitoTempo = 750;
 }
 
@@ -52,7 +54,7 @@ function posicaoRandomica(){
 //Criar o elemento HTMl
     var mosquito = document.createElement('img');
     mosquito.src ='img/balao_novo.png';
-    mosquito.className = tamanhoAleatorio() +'  ' + ladoAleatorio();
+    mosquito.className = tamanhoAleatorio() +' ' + ladoAleatorio();
     mosquito.style.left = posicaoX + 'px';
     mosquito.style.top = posicaoY + 'px';
     mosquito.style.position = 'absolute';
@@ -62,6 +64,9 @@ function posicaoRandomica(){
     //matar o mosquito
     mosquito.onclick = function(){
        // alert("morreuu");
+       pontos += 1;
+       document.getElementById('pontos').innerHTML = pontos;
+
        this.remove();
     }
 

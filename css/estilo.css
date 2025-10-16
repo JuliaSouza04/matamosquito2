@@ -35,7 +35,7 @@ body{
     position: absolute;
     width: 190px;
     padding: 10px;
-    left: 0;
+    left: 0; 
     bottom: 0px;
     border-top: solid #fff;
     background-color: #cabdbda8;
@@ -54,13 +54,13 @@ body{
 
 #Escolha{
     position: absolute;
-    top: 70% ;
+    top: 62% ;
     left: 47%;
 }
 
 .botao{
     position: absolute;
-    top: 62%;
+    top: 67%;
 }
 
 .principal{
@@ -78,13 +78,44 @@ body{
 
 #vitorias{
     position: absolute;
-    top: 12%;
-    left: 38%;
+    top: 10%;
+    left: 30%;
+    width: 800px;
 }
 
 .Over{
     position: absolute;
-    top: 15%;
-    left: 30%;
-    width: 800px;
+    top: 5%;
+    left: 15%;
+    width: 1500px;
+}
+
+.botaoGame{
+    position: absolute;
+    top: 85%;
+    width: 5%;
+}
+
+#painel2{
+    position: absolute;
+    width: 200px;
+    padding: 10px;
+    left: 0;
+    bottom: 0;
+    border-top: solid #fff;
+    border-color: #fff;
+    opacity: 0.7;
+    left: 88.5%;
+}
+
+.topo{
+    top: 4.5%;
+    right: 11.5%;
+    position: absolute;
+}
+
+.vencedor{
+    position: absolute;
+    top: 80%;
+    width: 5%;
 }
